@@ -43,7 +43,8 @@ export default function Home() {
         </div>
         <div className="">
           {/* <CompletionGrid /> */}
-          {stateDayName === 'Saturday' || stateDayName === 'Sunday' ? (
+          {weekDays[today.getDay()] === 'Saturday' ||
+          weekDays[today.getDay()] === 'Sunday' ? (
             <h2>It is the weekend! Take a load off fellas - you deserve it.</h2>
           ) : (
             <TodaysWorkoutGrid workout={todaysWorkout} />
