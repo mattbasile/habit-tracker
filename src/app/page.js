@@ -6,31 +6,28 @@ import CompletionGrid from './components/completionGrid';
 import TodaysWorkoutGrid from './components/TodaysWorkoutGrid';
 
 export default function Home() {
+  const today = new Date();
+  const weekDays = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ];
   const [todaysWorkout, setTodaysWorkout] = useState([]);
-  const [stateDayName, setStateDayName] = useState('');
+  const [stateDayName, setStateDayName] = useState(weekDays[today.getDay()]);
 
   useEffect(() => {
-    const weekDays = [
-      'Sunday',
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
-      'Friday',
-      'Saturday',
-    ];
-    const today = new Date();
-    const dayName = weekDays[today.getDay()];
-    setStateDayName(dayName);
-
     if (
-      dayName === 'Monday' ||
-      dayName === 'Wednesday' ||
-      dayName === 'Friday'
+      stateDayName === 'Monday' ||
+      stateDayName === 'Wednesday' ||
+      stateDayName === 'Friday'
     ) {
       setTodaysWorkout(workouts[0]);
     }
-    if (dayName === 'Tuesday' || dayName === 'Thursday') {
+    if (stateDayName === 'Tuesday' || stateDayName === 'Thursday') {
       setTodaysWorkout(workouts[1]);
     }
   }, []);
