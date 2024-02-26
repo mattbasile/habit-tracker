@@ -1,0 +1,43 @@
+[
+  {
+    "title": "M/W/F",
+    "activities": [
+      {
+        "title": "Stretch 10 minutes.",
+        "youtube_urls": ["https://www.youtube.com/watch?v=t2jel6q1GRk"]
+      },
+      {
+        "title": "Core 10 minutes.",
+        "youtube_urls": ["https://www.youtube.com/watch?v=NQxEUC3-aaE"]
+      },
+      {
+        "title": "Run 1 mile.",
+        "youtube_urls": []
+      },
+      {
+        "title": "Weights 20 minutes.",
+        "youtube_urls": ["https://www.youtube.com/watch?v=mf1xQS_Zlkc"]
+      }
+    ]
+  },
+  {
+    "title": "T/TH",
+    "activities": [
+      {
+        "title": "Yoga 20 minutes.",
+        "youtube_urls": [
+          "https://www.youtube.com/watch?v=_c9MDeDJ7IA",
+          "https://www.youtube.com/watch?v=nenEjPY7OnY",
+          "https://www.youtube.com/watch?v=Dnlxcp7jiP0"
+        ]
+      },
+      {
+        "title": "Jump rope 20 minutes.",
+        "youtube_urls": [
+          "https://youtu.be/OJSvpoQgGss?si=NZr1fbwg_0s-mhWY&t=68",
+          "https://www.youtube.com/watch?v=ZznwxdwotZk&t=142s"
+        ]
+      }
+    ]
+  }
+]
